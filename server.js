@@ -17,10 +17,6 @@ mongoose
 .then(()=> console.log('Mongodb Connected.....'))
 .catch(err => console.log(err));
 
-app.get('/', (req, res)=>{
-    res.send('Hello');
-})
-
 // Use Routes
 app.use('/api/items', items);
 
